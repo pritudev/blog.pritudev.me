@@ -54,9 +54,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: require("dotenv").config({
-          path: `.env.${process.env.TRACKING_ID}`,
-        }),
+        trackingId: `G-J19K0BYF6F`,
       },
     },
     {

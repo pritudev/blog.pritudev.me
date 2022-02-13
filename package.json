@@ -3,7 +3,7 @@
   "private": true,
   "description": "A starter for a blog powered by Gatsby and Markdown",
   "version": "0.1.0",
-  "author": "Pritu Dev",
+  "author": "Preet Suthar",
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
@@ -34,15 +34,15 @@
   "devDependencies": {
     "prettier": "2.4.1"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/pritudev/blog.pritudev.me",
   "keywords": [
-    "gatsby"
+    "gatsby", "blog", "preet suthar", "preet", "preet suthar blog" , "preet blog"
   ],
   "license": "0BSD",
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/pritudev/blog.pritudev.me.git"
   },
   "scripts": {
     "build": "gatsby build",

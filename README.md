@@ -5,7 +5,7 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby's blog starter
+  blog.pritudev.me
 </h1>
 
 <h3 align="center">

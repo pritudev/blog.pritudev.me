@@ -294,8 +294,8 @@ a:focus {
 }
 
 #main-heading {
-  font-family: var(--font-main-heading);
-  font-weight: var(--fontWeight-bold);
+  font-family: var(--sans-serif-font);
+  font-weight: var(--fontWeight-extrablack);
   font-size: var(--fontSize-7);
   margin: 0;
 }
@@ -312,7 +312,7 @@ a:focus {
 .post-list-item h2 {
   font-family: var(--sans-serif-font);
   letter-spacing: 0.1ch;
-  font-weight: var(--fontWeight-black);
+  font-weight: var(--fontWeight-normal);
   font-size: var(--fontSize-4);
   color: var(--color-post-title);
   margin-bottom: var(--spacing-2);

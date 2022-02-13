@@ -7,13 +7,13 @@ import Seo from "../components/seo"
 
 const BlogIndex = ({ data, location }) => {
   // const siteTitle = data.site.siteMetadata?.title || `Title`
-  const siteTitle = "Hi 👋, I am Preet"
+  const siteTitle = "Preet Suthar Blog"
   const posts = data.allMarkdownRemark.nodes
 
   if (posts.length === 0) {
     return (
       <Layout location={location} title={siteTitle}>
-        <Seo title="All posts" />
+        <Seo title="Home" />
         <Bio />
         <p>
           No blog posts found. Add markdown posts to "content/blog" (or the
@@ -25,7 +25,7 @@ const BlogIndex = ({ data, location }) => {
   }
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout id="dark-theme" location={location} title={siteTitle}>
       <Seo title="All posts" />
       <Bio />
       <ol style={{ listStyle: `none` }}>

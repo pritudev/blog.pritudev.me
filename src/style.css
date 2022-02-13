@@ -1,6 +1,10 @@
 /* Import Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+
 /* CSS Custom Properties Definitions */
 
 :root {
@@ -30,14 +34,14 @@
   --spacing-20: 5rem;
   --spacing-24: 6rem;
   --spacing-32: 8rem;
-  /* --fontFamily-serif: "sofiapro"; */
   --fontFamily-serif: var(--sans-serif-font);
-  --fontFamily-sans: "Poppins", sans-serif;
+  /* --fontFamily-sans: "Poppins", sans-serif; */
+  --font-poppins: "Poppins", sans-serif;
   --font-body: var(--fontFamily-serif);
   /* --font-heading: var(--fontFamily-sans); */
   --font-heading: var(--font-roboto);
   --font-main-heading: var(--sans-serif-font);
-  --sans-serif-font: "Poppins", sans-serif;
+  --sans-serif-font: "Open Sans", sans-serif;
   --font-lemonmilk: "lemonmilk";
   --font-roboto: "Roboto", sans-serif;
   --fontWeight-normal: 400;
@@ -149,41 +153,44 @@ h6 {
 }
 
 h1 {
-  font-family: var(--font-main-heading);
   font-size: var(--fontSize-6);
   color: var(--color-heading-gray);
 }
 
 h2 {
-  font-family: var(--font-heading);
+  font-family: var(--font-poppins);
   font-size: var(--fontSize-5);
   color: var(--color-heading-gray);
 }
 
 h3 {
-  font-family: var(--font-heading);
+  font-family: var(--font-poppins);
   font-size: var(--fontSize-4);
   color: var(--color-heading-gray);
 }
 
 h4 {
+  font-family: var(--font-poppins);
   font-size: var(--fontSize-3);
   font-family: var(--font-body);
 }
 
 h5 {
+  font-family: var(--font-poppins);
   font-size: var(--fontSize-2);
   font-family: var(--font-body);
 }
 
 h6 {
+  font-family: var(--font-poppins);
   font-size: var(--fontSize-1);
   font-family: var(--font-body);
 }
 
 h1 > a {
-  color: inherit;
-
+  font-family: var(--sans-serif-font);
+  font-weight: var(--fontWeight-bold);
+  color: var(--color-heading-black);
   text-decoration: none;
 }
 
@@ -293,9 +300,8 @@ a:focus {
   margin-bottom: var(--spacing-12);
 }
 
-#main-heading {
-  font-family: var(--sans-serif-font);
-  font-weight: var(--fontWeight-extrablack);
+#main-heading a {
+  font-family: var(--font-poppins);
   font-size: var(--fontSize-7);
   margin: 0;
 }
@@ -310,11 +316,11 @@ a:focus {
 }
 
 .post-list-item h2 {
-  font-family: var(--sans-serif-font);
-  letter-spacing: 0.1ch;
-  font-weight: var(--fontWeight-normal);
+  font-family: var(--font-poppins);
+  font-weight: var(--fontWeight-bold);
   font-size: var(--fontSize-4);
   color: var(--color-post-title);
+  letter-spacing: 0.3px;
   margin-bottom: var(--spacing-2);
   margin-top: var(--spacing-0);
 }
@@ -352,6 +358,7 @@ a:focus {
 
 .blog-post header h1 {
   margin: var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0);
+  font-family: var(--font-poppins);
 }
 
 .blog-post header p {
@@ -361,6 +368,11 @@ a:focus {
 
 .blog-post-nav ul {
   margin: var(--spacing-0);
+  text-decoration: none;
+}
+.blog-post-nav ul li a:hover {
+  margin: var(--spacing-0);
+  text-decoration: none !important;
 }
 
 .gatsby-highlight {
@@ -378,4 +390,63 @@ a:focus {
   ol {
     list-style-position: inside;
   }
+}
+
+/* Dark theme */
+
+.dark-theme {
+  color: white;
+  background-color: #23283e;
+}
+
+.dark-theme a {
+  color: white;
+  text-decoration: none;
+}
+
+.dark-theme a:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+.dark-theme p {
+  color: rgb(184, 183, 183);
+}
+
+.dark-theme #main-heading a:hover {
+  text-decoration: none !important;
+}
+
+.dark-theme .indigo-btn {
+  color: white;
+}
+
+.dark-theme #main-heading a {
+  color: #cdcdff;
+}
+
+/* Button */
+
+.indigo-btn {
+  text-decoration: none !important;
+  border: 2px solid #90a0d9 !important;
+  background-color: transparent !important;
+  font-weight: 800 !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  margin: 10px 10px !important;
+  color: #90a0d9 !important;
+  font-family: var(--font-body) !important;
+  box-shadow: inset 0 0 0 0 #90a0d9;
+  -webkit-transition: ease-out 0.4s !important;
+  -moz-transition: ease-out 0.4s !important;
+  transition: ease-out 0.4s !important;
+  display: inline-block !important;
+}
+
+.indigo-btn:hover {
+  box-shadow: inset 400px 0 0 0 #90a0d9 !important;
+  color: white !important;
 }

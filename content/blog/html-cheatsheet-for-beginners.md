@@ -1,7 +1,6 @@
 ---
-title: 'HTML Cheatsheet for Beginners.'
+title: "HTML Cheatsheet for Beginners."
 date: 2021-09-01
-published: true
 ---
 
 ## Structure

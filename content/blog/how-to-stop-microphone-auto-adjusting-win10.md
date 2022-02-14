@@ -1,7 +1,6 @@
 ---
-title: 'How to Stop Microphone Auto Adjusting Windows 10'
+title: "How to Stop Microphone Auto Adjusting Windows 10"
 date: 2022-02-12
-published: true
 ---
 
 ## Why Microphone level keep adjusting it self automatically?

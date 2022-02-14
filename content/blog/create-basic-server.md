@@ -1,7 +1,6 @@
 ---
-title: 'Create a basic web server using express js'
+title: "Create a basic web server using express js"
 date: 2021-09-25
-published: true
 ---
 
 Easiest way to create a basic webserver using express js.
@@ -13,18 +12,18 @@ First of all we are gonna create a new file named `server.js` or you can use any
 ### Coding Time
 
 ```js
-const express = require('express') // npm install express
+const express = require("express") // npm install express
 const app = express()
 const port = 3000
 
 // Send text
-app.get('/', (req, res) => {
-  res.send('Hello World!')
+app.get("/", (req, res) => {
+  res.send("Hello World!")
 })
 
 // Send HTML File
-app.get('/', (req, res) => {
-  res.sendFile('./index.html')
+app.get("/", (req, res) => {
+  res.sendFile("./index.html")
 })
 
 app.listen(port, () => {

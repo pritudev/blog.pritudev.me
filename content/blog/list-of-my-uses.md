@@ -1,7 +1,6 @@
 ---
-title: 'List of my uses, Tech and Gears'
+title: "List of my uses, Tech and Gears"
 date: 2021-09-28
-published: true
 ---
 
 Here is the list of my tech and gear which i use on daily basis

@@ -1,7 +1,6 @@
 ---
-title: 'Control Arduino using Python'
+title: "Control Arduino using Python"
 date: 2021-12-27
-published: true
 ---
 
 Arduino is the most popular thing in those days and you can do so many things using arduino, but using arduino with combination of python gonna blow up i mean you can almost do anything you want using arduino with python and in this blog we are gonna control our led using Arduino UNO, Python and pyfirmata package for arduino.

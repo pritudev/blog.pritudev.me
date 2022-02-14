@@ -1,7 +1,6 @@
 ---
-title: 'Python Text to Speech Converter.'
+title: "Python Text to Speech Converter."
 date: 2022-02-10
-published: true
 ---
 
 Speech recognition is very useful! It can be used in so many applications or programs like it can be used for home automation systems, artificial intelligence, etc. so in this article, you'll learn how to make basic text-to-speech programs using python.

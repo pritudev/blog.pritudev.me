@@ -1,7 +1,6 @@
 ---
-title: 'Theme Toggler using Javascript, HTML, CSS'
+title: "Theme Toggler using Javascript, HTML, CSS"
 date: 2021-09-06
-published: true
 ---
 
 So what is theme toggler? it's just a setting for your website to set light theme or dark theme and in these days we can do it very easily with few lines of javascript code and yeah let's start exciting thing **Coding**...
@@ -46,13 +45,13 @@ Next let's head over to some css to style the page
 ### Step 2 : Adding CSS
 
 ```css
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'poppins', sans-serif;
+  font-family: "poppins", sans-serif;
 }
 
 .theme {
@@ -101,11 +100,11 @@ I think you don't need any brief tutorial for CSS stuff as I am just aligning ev
 Finally It's time to add logic i mean javascript into code..
 
 ```js
-const container = document.getElementById('container')
+const container = document.getElementById("container")
 // Define main container or div with id to get reference to that code
 
 function themeToggle() {
-  container.classList.toggle('theme')
+  container.classList.toggle("theme")
 }
 // Create a function which we used in that button before "themeToggle()" function where we just use that container  variable and toggle a class which we defined in css file head over to css code and check for "theme" class which just change to color of background and text color
 ```

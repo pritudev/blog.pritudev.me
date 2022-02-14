@@ -1,7 +1,6 @@
 ---
 title: "Add comments on your blog post created with gatsby"
 date: 2022-02-12
-published: true
 ---
 
 If you have any blog website created using `jsx` I mean react gatsby, nextjs or something than you might want to add comments on your blog page right? Here is a full article about that.

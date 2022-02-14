@@ -1,7 +1,6 @@
 ---
-title: 'How To Create a Gradient Background on Scroll.'
+title: "How To Create a Gradient Background on Scroll."
 date: 2021-08-28
-published: true
 ---
 
 Create a linear gradient background color that starts from the top. It starts from teal/green to blue:

@@ -1,7 +1,6 @@
 ---
-title: 'Create Snackbar / Toast in using HTML, CSS & JS.'
+title: "Create Snackbar / Toast in using HTML, CSS & JS."
 date: 2021-08-28
-published: true
 ---
 
 Snackbars are often used as tooltips/popups to show a message at the bottom of the screen.
@@ -109,14 +108,14 @@ Use JavaScript to add the "show" class to the snackbar container with a click of
 ```js
 function myFunction() {
   // Get the snackbar DIV
-  var x = document.getElementById('snackbar')
+  var x = document.getElementById("snackbar")
 
   // Add the "show" class to DIV
-  x.className = 'show'
+  x.className = "show"
 
   // After 3 seconds, remove the show class from DIV
   setTimeout(function () {
-    x.className = x.className.replace('show', '')
+    x.className = x.className.replace("show", "")
   }, 3000)
 }
 ```

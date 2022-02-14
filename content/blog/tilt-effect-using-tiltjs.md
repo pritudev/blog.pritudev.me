@@ -1,7 +1,6 @@
 ---
-title: 'Tilt Effect Using Tilt.js.'
+title: "Tilt Effect Using Tilt.js."
 date: 2021-08-29
-published: true
 ---
 
 First of all what is tilt js it's a tiny requestAnimationFrame powered **60+fps** lightweight parallax hover tilt effect for jQuery. you don't need jQuery or any css to create this thing it's very easy to create.
@@ -60,12 +59,12 @@ Next let's create our box better and add tilt effect using css only no javascrip
 ## Step 2 - Add css
 
 ```css
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600,700');
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600,700");
 * {
   box-sizing: border-box;
 }
 body {
-  font-family: 'Fira Sans';
+  font-family: "Fira Sans";
   background: #e7e7e7;
   margin-top: 5%;
 }

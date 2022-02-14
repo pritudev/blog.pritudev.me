@@ -1,7 +1,6 @@
 ---
-title: 'Create a Sticky Element using only CSS.'
+title: "Create a Sticky Element using only CSS."
 date: 2021-08-28
-published: true
 ---
 
 <!-- # How TO - Sticky Element -->

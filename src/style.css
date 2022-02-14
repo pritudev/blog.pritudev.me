@@ -70,6 +70,7 @@
   --color-text-light: #4f5969;
   --color-heading: #1a202c;
   --color-heading-black: black;
+  --color-heading-gray: #242e3d;
   --color-accent: #d1dce5;
   --color-post-title: #1f2937;
 }
@@ -335,8 +336,16 @@ a:focus {
 }
 
 .header-link-home {
-  font-weight: var(--fontWeight-bold);
   font-family: var(--font-heading);
+  color: var(--color-heading-gray);
+  text-decoration: none;
+  font-size: var(--fontSize-2);
+  transition: all 100ms ease;
+}
+
+.header-link-home:hover {
+  font-family: var(--font-heading);
+  color: var(--color-heading-black);
   text-decoration: none;
   font-size: var(--fontSize-2);
 }
@@ -371,9 +380,9 @@ a:focus {
   margin: var(--spacing-0);
   text-decoration: none;
 }
-.blog-post-nav ul li a:hover {
+.blog-post-nav ul a {
   margin: var(--spacing-0);
-  text-decoration: none !important;
+  text-decoration: none;
 }
 
 .gatsby-highlight {
@@ -393,44 +402,11 @@ a:focus {
   }
 }
 
-/* Dark theme */
-
-.dark-theme {
-  color: white;
-  background-color: #23283e;
-}
-
-.dark-theme a {
-  color: white;
-  text-decoration: none;
-}
-
-.dark-theme a:hover {
-  text-decoration: underline;
-  text-decoration-color: white;
-}
-
-.dark-theme p {
-  color: rgb(184, 183, 183);
-}
-
-.dark-theme #main-heading a:hover {
-  text-decoration: none !important;
-}
-
-.dark-theme .indigo-btn {
-  color: white;
-}
-
-.dark-theme #main-heading a {
-  color: #cdcdff;
-}
-
 /* Button */
 
 .indigo-btn {
   text-decoration: none !important;
-  border: 2px solid #90a0d9 !important;
+  border: 2px solid var(--color-post-title) !important;
   background-color: transparent !important;
   font-weight: 800 !important;
   padding-left: 20px !important;
@@ -438,9 +414,9 @@ a:focus {
   padding-top: 10px !important;
   padding-bottom: 10px !important;
   margin: 10px 10px !important;
-  color: #90a0d9 !important;
+  color: var(--color-post-title) !important;
   font-family: var(--font-body) !important;
-  box-shadow: inset 0 0 0 0 #90a0d9;
+  box-shadow: inset 0 0 0 0 var(--color-post-title);
   -webkit-transition: ease-out 0.4s !important;
   -moz-transition: ease-out 0.4s !important;
   transition: ease-out 0.4s !important;
@@ -448,6 +424,7 @@ a:focus {
 }
 
 .indigo-btn:hover {
-  box-shadow: inset 400px 0 0 0 #90a0d9 !important;
+  box-shadow: inset 400px 0 0 0 var(--color-post-title) !important;
   color: white !important;
+  font-weight: 800;
 }

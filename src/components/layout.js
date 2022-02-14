@@ -5,10 +5,7 @@ const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
   let header
-  function themeToggle() {
-    var element = document.body
-    element.classList.toggle("dark-theme")
-  }
+
   if (isRootPath) {
     header = (
       <h1 id="main-heading">
@@ -18,7 +15,7 @@ const Layout = ({ location, title, children }) => {
   } else {
     header = (
       <Link className="header-link-home" to="/">
-        🏠 Home
+        Home
       </Link>
     )
   }
@@ -27,12 +24,6 @@ const Layout = ({ location, title, children }) => {
     <div className="global-wrapper" data-is-root-path={isRootPath}>
       <header className="global-header">{header}</header>
 
-      <button className="indigo-btn" onClick={themeToggle}>
-        Toggle Theme
-      </button>
-
-      <br />
-      <br />
       <main>{children}</main>
       <footer>
         © {new Date().getFullYear()}, Built by
